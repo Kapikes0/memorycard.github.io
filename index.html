@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="author" content="Kapikes" />
+
+    <meta name="copyright" content="Kapikes" />
+
+    <meta name="description" content="jeu de memoire carte" />
+
+    <meta name="keywords" content=" memoire, memory, Kapikes, game, jeu" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="icon" type="image/png" href="./assets/img/dif_facile/dos/images.jpg" />
+
+    <link rel="stylesheet" type="text/css" href="./assets/framework/bootstrap.min.css?version=5.1.3" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/index.css" />
+
+    <title>memory mystere</title>
+</head>
+
+<body class="text-center">
+    <header class="container-fluid p-2">
+        <nav class="row">
+            <div class="col-12 h2 p-4" id="titre">* Mystery Memory Card Game *</div>
+            <div class="col-4">
+
+                        <!-- plusieur niveau de difficulte (en cours de creation)-->
+                <div class="ss_titre border border-info mb-2" id="difficulte_titre">Difficulte</div>
+                <div class="" id="difficulte_boutton">
+                    <button class="border border-danger p-1 cadre" disabled id="facile">Facile</button>
+                    <button class="border border-danger p-1 cadre" disabled id="moyen">Moyen</button>
+                    <button class="border border-danger p-1 cadre" disabled id="dur">Dur</button>
+                    <i class="d-block">en cours de Creations</i>
+                </div>
+            </div>
+            <div class="col-4">
+                    <!-- nombres de carte sur la partie en cours-->
+                <div class="ss_titre border border-info mb-2">LeveL</div>
+                <div id="lvl">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="ss_titre border border-info mb-2">Temps & Coups</div>
+                    <!-- temps de la partie en cours-->
+                <div class="border border-danger p-1 mb-2 cadre">Temps => <time id="time"></time></div>
+                    <!-- nombre de coup de la partie en cours-->
+                <div class="border border-danger p-1 cadre">Coups => <span id="nombre_de_coup"></span></div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="container-fluid p-2">
+
+        <div class="row">       <!-- bouton pour le niveau suivant-->
+            <button class="col-4 offset-4 border border-info p-2 cadre" id="niveau_suivant">LeveL Suivant</button>
+            <div class="col-10 offset-1 p-2 border border-danger" id="plateau">
+
+
+
+
+                        <!-- page de fin de jeu-->
+                <div class="row p-2 d-none" id="fin">
+                    <div class="col-10 offset-1"> <img src="./assets/img/fin/index.jpg" class="img-fluid" alt=""></div>
+                    <div class="col-12 sizee">Vous avez Finis le Jeu </div>
+
+                    <div class="col-6 ">
+                        <div class="sizee">Votre Temps sur toutes les Parties </div>
+                        <div class="row">  <!-- temps des partis-->
+                            <div class="col-12 sizee">Parties1=><span id="time1"></span></div>
+                            <div class="col-12 sizee">Parties2=><span id="time2"></span></div>
+                            <div class="col-12 sizee">Parties3=><span id="time3"></span></div>
+                            <div class="col-12 sizee">Parties4=><span id="time4"></span></div>
+                            <div class="col-12 sizee">Parties5=><span id="time5"></span></div>
+                            <div class="col-12 sizee">Toutes les Parties=><span id="time_toto"></span></div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 ">
+                        <div class="sizee">Vos Score sur toutes les Parties </div>
+                        <div>  <!-- coups des partis-->
+                            <div class="sizee">Parties1=><span id="nombre_de_coup1"></span>Coup</div>
+                            <div class="sizee">Parties2=><span id="nombre_de_coup2"></span>Coup</div>
+                            <div class="sizee">Parties3=><span id="nombre_de_coup3"></span>Coup</div>
+                            <div class="sizee">Parties4=><span id="nombre_de_coup4"></span>Coup</div>
+                            <div class="sizee">Parties5=><span id="nombre_de_coup5"></span>Coup</div>
+                            <div class="sizee">Toutes les Parties=><span id="nombre_de_coup_toto"></span>Coup</div>
+                        </div>
+                    </div>
+
+                    
+                            <!--boutton pour reinisialiser le jeu en fin de partie-->
+                    <div class="col-4 offset-4 btn btn-danger btn-lg" id="restart" value="Rafraîchir"
+                        onclick="history.go(0)"><b class="d-block"> REJOUER </b></div>
+                </div>
+
+
+
+
+                        <!--emplacement du jeu de carte-->
+                <div class="row p-2 " id="cards">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer><p class="sizee text-end pe-3">&copy;Kapikes</p></footer>
+    <script type="text/javascript" src="./assets/js/const_var.js"></script>
+    <script type="text/javascript" src="./assets/js/index.js"></script>
+    <script type="text/javascript" src="./assets/js/tps.js"></script>
+</body>
+
+</html>

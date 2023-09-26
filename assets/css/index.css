@@ -1,0 +1,56 @@
+
+            /* style d'ecriture */
+@font-face {
+    font-family:"dungeon" ;
+    src: url(./../font/dungeon/DUNGRG__.TTF);
+}
+@font-face {
+    font-family:"celtic" ;
+    src: url(./../font/celtic_md/celticmd.ttf);
+}
+
+            /* mise en forme couleur, taille de texte, et bordure */
+body{
+    background-color: #142B40;
+    font-family:"dungeon";
+    color: darkgoldenrod;
+    text-shadow:3px 2px#2C6673 ;
+    font-size: 1em;
+}
+#titre{
+    font-family: "celtic";
+    border:  double darkred 3px;
+    font-size: 2em;
+}
+.ss_titre{
+    background-color:#295773 ;
+    border-radius: 25px;
+    font-size: 2.5em;
+}
+#plateau{
+    background-color: #3B848C;
+    box-shadow:2px 2px 2px red, -0.4em 0 0.4em red;
+    border-radius: 25px;
+}
+.sizee{
+    font-size: 2em;
+}
+
+h3{
+    background-color:#295773;
+    color:  darkgoldenrod;
+    border-radius: 25px;
+    
+}
+.cadre{
+    border-radius: 25px;
+    background-color:#295773 ;
+    color:  darkgoldenrod;
+    font-size: 1.5em;
+}
+
+
+            /* cache bouton */
+#niveau_suivant{
+    display: none;
+}
